@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main(){
+	char input[50];
+	int i=0;
+	int count=0;
+	while(1){
+		scanf("%c",&input[i]);
+		if(input[i]=='\n')
+			break;
+		i++;
+	}
+	for(i=0;input[i]!='\n';i++)
+	{
+		if(input[i]>='a'  &&  input[i]<='z')
+			count++;
+	}
+	printf("count=%d\n",count);
+	return 0;
+}
