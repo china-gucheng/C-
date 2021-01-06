@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+int main (){
+	char first[100]= "I love lina.";
+	char second[100]="I love lina.";
+	int cmp = strcmp(first,second);
+	if(cmp>0)
+	{
+		printf("first>second");
+		
+	}
+	else if(cmp<0)
+	{
+		printf("first<second");
+	}
+	else{
+		printf("first=second");
+	}
+	
+	return 0;
+}
